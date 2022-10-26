@@ -27,8 +27,8 @@ $('.child').click(function(event) {
         console.log(splash);
         console.log(splash.height, splash.width);
         splash.css("display","");
-        splash.css("left", (x-400)+"px");
-        splash.css("top",(y-314)+"px");
+        splash.css("left", (x-300)+"px");
+        splash.css("top",(y-235)+"px");
         splash.css("transform","rotate("+ Math.floor((Math.random() * 359) + 1) +"deg)");
         $('#message').html(
             '<p class="comment">' + frases[Math.floor((Math.random() * 9))] + '</p>');
@@ -36,6 +36,7 @@ $('.child').click(function(event) {
     });
 
 var getArtwork = function(artId){
+    $('.comment').css("display","none");
     $('#splash').css("display","none");
     fetch("https://collectionapi.metmuseum.org/public/collection/v1/objects/"+ artId)
     .then((response) => response.json())
