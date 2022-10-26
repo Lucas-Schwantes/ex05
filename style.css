@@ -50,10 +50,9 @@ table {
 }
 
 
-.container {
-    margin-top: 100px;
+  .container {
+    margin-top: 7vh;
     width: 100%;
-
     /* Center vertically and horizontally */
     display: flex;
     justify-content: center;
@@ -61,6 +60,7 @@ table {
   }
   
   .child {
+    width: 50%;
   }
 
   .title{
@@ -71,9 +71,6 @@ table {
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 10px;
-
-
-
   }
 
   .author{
@@ -82,10 +79,12 @@ table {
     font-size: 15px;
     font-weight: 100;
   }
-#splash{
-  position: absolute;
-  width: 800px;
-}
+
+  #splash{
+    position: absolute;
+    width: 600px;
+  }
+
   #artwork {
     display: block;
     border: solid 50px;
@@ -96,6 +95,7 @@ table {
     box-shadow: #0000007d 7px 7px 11px;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
 
   }
 
@@ -105,49 +105,42 @@ table {
   }
 
   .comment {
-    
-  
-  position: absolute;
+    position: absolute;
     background: white;
     text-transform: uppercase;
     font-family: sans-serif;
     padding: 10px;
     font-weight: 200;
-    bottom: 924px;
-    left: 304px;
+    left: 20vh;
     transform: rotate(351deg);
   }
 
   button {
     font-family: 'Cormorant Garamond', serif; 
-  bottom: 50px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  background-color: #ffeec6;
-  border: solid 8px;
-  border-bottom-color: #ffde98;
-  border-left-color: #85734c;
-  border-right-color: #ffedc6;
-  border-top-color: #69572d;
-  box-shadow: #0000007d 2px 2px 10px;    
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 5px;
-  color: #69572d;
-}
+    bottom: 50px;
+    position: fixed;
+    right: 50px;
+    width: fit-content;
+    padding: 10px;
+    background-color: #ffeec6;
+    border: solid 8px;
+    border-bottom-color: #ffde98;
+    border-left-color: #85734c;
+    border-right-color: #ffedc6;
+    border-top-color: #69572d;
+    box-shadow: #0000007d 2px 2px 10px;    
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #69572d;
+  }
 
-button:active{
-
-background-color: #ffde98;
-border: solid 8px;
-border-top-color: #ffde98;
-border-right-color: #85734c;
-border-left-color: #ffedc6;
-border-bottom-color: #69572d;
-box-shadow: #0000007d 2px 2px 10px;
-}
+  button:active{
+    background-color: #ffde98;
+    border: solid 8px;
+    border-top-color: #ffde98;
+    border-right-color: #85734c;
+    border-left-color: #ffedc6;
+    border-bottom-color: #69572d;
+    box-shadow: #0000007d 2px 2px 10px;
+  }
